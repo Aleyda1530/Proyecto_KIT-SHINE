@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones de los usuarios</title>
+</head>
+<body>
+  <header>
+    <h1>KIT SHINE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cuenta.html">Mi Cuenta</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="opiniones.html" class="activo">Opiniones</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Reseñas de Clientes</h2>
+      <p>Queremos conocer tu opinión sobre KIT SHINE. Déjanos tu reseña:</p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="nombre">Ingrese su Nombre:</label>
+          <input type="text" id="nombre" name="Nombre" required>
+        </div>
+        <div>
+          <label for="apellido">Ingrese su Apellido:</label>
+          <input type="text" id="apellido" name="Apellido" required>
+        </div>
+        <div>
+          <label for="correo">Correo electrónico (opcional):</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+        </div>
+        <fieldset>
+          <legend>Calificación de su experiencia:</legend>
+          <label><input type="radio" name="calificacion" value="1" required> ⭐</label>
+          <label><input type="radio" name="calificacion" value="2"> ⭐⭐</label>
+          <label><input type="radio" name="calificacion" value="3"> ⭐⭐⭐</label>
+          <label><input type="radio" name="calificacion" value="4"> ⭐⭐⭐⭐</label>
+          <label><input type="radio" name="calificacion" value="5"> ⭐⭐⭐⭐⭐</label>
+        </fieldset>
+        <div>
+          <label for="comentario">Tu opinión es importante para nosotros:</label><br>
+          <textarea id="comentario" name="comentario" placeholder="Escriba aquí su comentario..."></textarea>
+        </div>
+        <div>
+          <button type="submit">Enviar reseña</button>
+          <button type="reset">Restablecer formulario</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body>
+  <header>
+    <h1>KIT SHINE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cuenta.html">Mi Cuenta</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="opiniones.html">Opiniones</a></li>
+        <li><a href="pedidos.html" class="activo">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de Pedidos</h2>
+      <p>Es tu momento de brillar con el mejor kit que combina, porabilidad, brillo y glamour.
+        Completa el formulario para realizar tu pedido:</p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="nombre">Ingrese su nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="apellido">Ingrese apellido:</label>
+          <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div>
+          <label for="dni">Documento de identidad:</label>
+          <input type="text" id="dni" name="dni" required>
+        </div>
+        <div>
+          <label for="direccion">Dirección Exacta:</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Pais - Ciudad, Distrito Av/Calle Mz. #" required>
+        </div>
+        <div>
+          <label for="correo">Ingrese su correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        </div>
+        <div>
+          <label for="producto">Producto:</label>
+          <select id="producto" name="producto" required>
+            <option value="">--Selecciona--</option>
+            <option value="kit1">KIT SHINE 1: ShineBloom</option>
+            <option value="kit2">KIT SHINE 2: CharmScent</option>
+            <option value="kit3">KIT SHINE 3: LuxeGems </option>
+          </select>
+        </div>
+        <fieldset>
+          <legend>Método de pago</legend>
+          <label><input type="radio" name="pago" value="tarjeta" required> Tarjeta</label>
+          <label><input type="radio" name="pago" value="transferencia"> Transferencia</label>
+          <label><input type="radio" name="pago" value="Yape"> Yape</label>
+          <label><input type="radio" name="pago" value="contra_entrega"> Contra entrega</label>
+        </fieldset>
+        <div>
+          <label for="comentarios">Comentarios adicionales:</label><br>
+          <textarea id="comentarios" name="comentarios" placeholder="Escriba aquí otras especificaciones..."></textarea>
+        </div>
+        <div>
+          <button type="submit">Enviar pedido</button>
+          <button type="reset">Restablecer formulario</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</html>
