@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #B8FFEA;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+header {
+  background-color: #f0d0ff;
+  color: rgb(56, 13, 66);
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 20px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  background-color: #246b45;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #102c2c;
+  margin-bottom: 10px;
+}
+
+p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+form {
+  background: #ffdbfd;
+  padding: 20px;
+  border: 2px solid #bd14a6;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px #aaa;
+  max-width: 600px;
+  margin: auto;
+}
+
+form div, fieldset {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+/* Botones */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #53e030;
+}
+
+button[type="reset"] {
+  background-color: #9c1331;
+}
+
+button[type="reset"]:hover {
+  background-color: #520b7a;
+}
+/* TABLAS */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  background: #f9f9f9;
+  box-shadow: 2px 2px 8px #aaa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+caption {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #4682b4;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background: #2e8b57;
+  color: white;
+}
+tfoot td {
+  font-weight: bold;
+  background: #eee;
+}
+
+
+/* NAV (Menú desplegable con <details>)  */
+nav details {
+  margin-top: 15px;
+}
+
+nav summary {
+  font-weight: bold;
+  cursor: pointer;
+  background: #246b45;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+/* SECCIONES PRINCIPALES (index) */
+main section {
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px #aaa;
+}
+
+h3, h4 {
+  color: #6a5acd; /* púrpura suave */
+}
+
+/* ----- LISTAS ----- */
+ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* IMÁGENES */
+main img {
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  transition: transform 0.3s;
+}
+
+aside {
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 500px;
+  background: #eef;
+  border-left: 5px solid #4682b4;
+  border-radius: 8px;
+}
+
+/* FORMULARIO DE OPINIONES */
+.opiniones-section {
+  margin: 30px auto;
+  max-width: 700px;
+  padding: 20px;
+  background: #fff0f6;
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px #bbb;
+}
+
+.opiniones-section h2 {
+  color: #a1067a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.opiniones-section p {
+  text-align: center;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 2px solid #a1067a;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #a1067a;
+}
+
+/* estrellas (radio buttons) */
+fieldset label {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* FORMULARIO DE PEDIDOS */
+.pedidos-section {
+  margin: 30px auto;
+  max-width: 700px;
+  padding: 20px;
+  background: #e6fff7;
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px #aaa;
+}
+
+.pedidos-section h2 {
+  color: #0d665e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pedidos-section p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: normal;
+  color: #333;
+}
+
+.pedidos-section select {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.pedidos-section fieldset {
+  border: 2px solid #0d665e;
+  border-radius: 9px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.pedidos-section legend {
+  font-weight: bold;
+  color: #0d665e;
+}
