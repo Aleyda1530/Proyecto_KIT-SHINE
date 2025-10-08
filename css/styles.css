@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   background-color: #B8FFEA;
@@ -18,7 +19,7 @@ header h1 {
   font-size: 2rem;
   letter-spacing: 2px;
 }
-
+/*NAVEGACIÓN*/
 nav ul {
   list-style: none;
   margin: 0;
@@ -37,18 +38,66 @@ nav ul li a {
   transition: background 0.2s;
 }
 
+nav ul li a:link { 
+  background-color: var(--color-principal); 
+}
+nav ul li a:visited { 
+  background-color: #4b0082; 
+}
 nav ul li a:hover,
-nav ul li a.activo {
-  background-color: #246b45;
+nav ul li a.activo { 
+  background-color: var(--color-secundario); 
+}
+nav ul li a:active { 
+  background-color: var(--color-acento); 
+}
+nav details {
+  margin-top: 15px;
 }
 
-main {
-  padding: 20px;
+nav summary {
+  font-weight: bold;
+  cursor: pointer;
+  background: darkgreen;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
 }
 
-h2 {
-  color: #102c2c;
+/*SECCIONES PRINCIPALES*/
+
+main section {
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px #aaa;
+  transition: transform 0.3s;
+}
+
+main section:hover {
+  transform: scale(1.02);
+}
+
+main section > h2 {
+  color: black;
   margin-bottom: 10px;
+}
+
+main section > h2 + p {
+  color: #333;
+  font-weight: 600;
+}
+
+h2::before {
+  content: "💎 ";
+}
+h2::after {
+  content: " 💎";
+}
+h3, h4 {
+  color: #6a5acd;
 }
 
 p {
@@ -56,6 +105,12 @@ p {
   margin-bottom: 20px;
 }
 
+p::first-letter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-acento);
+}
+/*Formularios*/
 form {
   background: #ffdbfd;
   padding: 20px;
@@ -74,6 +129,14 @@ label {
   font-weight: bold;
   display: block;
   margin-bottom: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 2px darkcyan;
+  outline: none;
+  box-shadow: 0 0 5px darkmagenta;
 }
 
 input, select, textarea {
@@ -96,15 +159,19 @@ button {
 }
 
 button:hover {
-  background-color: #53e030;
+  background-color: darkgreen;
+}
+
+button:focus {
+  outline: 2px solid fuchsia;
 }
 
 button[type="reset"] {
-  background-color: #9c1331;
+  background-color: darkred;
 }
 
 button[type="reset"]:hover {
-  background-color: #520b7a;
+  background-color: darkviolet;
 }
 /* TABLAS */
 table {
@@ -131,10 +198,18 @@ th {
   background: #2e8b57;
   color: white;
 }
+tbody tr:nth-child(odd) { 
+  background: #eef; 
+}
+tbody tr:nth-child(even) { 
+  background: #fff; 
+}
+
 tfoot td {
   font-weight: bold;
   background: #eee;
 }
+
 
 
 /* NAV (Menú desplegable con <details>)  */
@@ -150,25 +225,27 @@ nav summary {
   border-radius: 6px;
   color: white;
 }
-
-/* SECCIONES PRINCIPALES (index) */
-main section {
-  margin: 30px auto;
-  max-width: 800px;
-  padding: 15px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 2px 2px 6px #aaa;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-h3, h4 {
-  color: #6a5acd; /* púrpura suave */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
 }
 
-/* ----- LISTAS ----- */
-ul ul {
-  list-style-type: circle;
-  margin-left: 20px;
+nav ul li a:hover,
+nav ul li a.activo {
+  background-color: #246b45;
 }
 
 /* IMÁGENES */
@@ -176,9 +253,15 @@ main img {
   margin: 10px;
   border-radius: 10px;
   border: 2px solid #ddd;
-  transition: transform 0.3s;
+  transition: transform 0.3s, border-color 0.3s;
 }
 
+main img:hover {
+  transform: scale(1.05);
+  border-color: darkviolet
+}
+
+/*Aside*/
 aside {
   margin: 20px auto;
   padding: 15px;
@@ -186,16 +269,25 @@ aside {
   background: #eef;
   border-left: 5px solid #4682b4;
   border-radius: 8px;
+  position: relative;
 }
+
+aside::before {
+  content: "📝 ";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
 
 /* FORMULARIO DE OPINIONES */
 .opiniones-section {
   margin: 30px auto;
-  max-width: 700px;
+  max-width: 700px auto;
   padding: 20px;
   background: #fff0f6;
   border-radius: 12px;
-  box-shadow: 3px 3px 10px #bbb;
+  box-shadow: 2px 2px 10px #bbb;
 }
 
 .opiniones-section h2 {
@@ -231,11 +323,11 @@ fieldset label {
 /* FORMULARIO DE PEDIDOS */
 .pedidos-section {
   margin: 30px auto;
-  max-width: 700px;
+  max-width: 700px auto;
   padding: 20px;
   background: #e6fff7;
   border-radius: 12px;
-  box-shadow: 3px 3px 10px #aaa;
+  box-shadow: 2px 2px 10px #aaa;
 }
 
 .pedidos-section h2 {
@@ -268,4 +360,7 @@ fieldset label {
 .pedidos-section legend {
   font-weight: bold;
   color: #0d665e;
+}
+.pedidos-section h2::after {
+  content: " 🛍️";
 }
