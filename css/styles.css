@@ -364,3 +364,52 @@ fieldset label {
 .pedidos-section h2::after {
   content: " 🛍️";
 }
+
+/*Mejoras con el laboratorio 9 */
+.contenedor-boleta {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Tabla principal */
+.tabla-boleta {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px auto;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+.tabla-boleta th {
+  background-color: #a1067a;
+  color: #ffffff;
+  padding: 8px;
+  border: 1px solid #cccccc;
+}
+
+.tabla-boleta td {
+  padding: 8px;
+  border: 1px solid #cccccc;
+}
+
+.tabla-boleta tfoot td {
+  font-weight: bold;
+  background-color: #ffe4fb;
+}
+
+/* Enlace de regreso */
+main p a {
+  color: #a1067a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main p a:hover {
+  text-decoration: underline;
+}
