@@ -439,3 +439,131 @@ footer:hover {
   background-color: #bd6dff;
   transition: background 0.3s ease;
 }
+
+/*USO DEL RESPONSIVE */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 900px) {
+
+  header {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* Menú (details + summary) */
+  nav summary {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    width: 80%;
+  }
+
+  /* Secciones principales */
+  main section {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  main section:hover {
+    transform: none; /* evita zoom al tocar en móviles */
+  }
+
+  /* Imágenes */
+  main img {
+    width: 90%;
+    max-width: 400px;
+    display: block;
+    margin: 0.5rem auto;
+  }
+
+  /* Tablas */
+  table {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  /* Formularios */
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input, select, textarea {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  aside {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+/* Celulares y pantallas pequeñas */
+@media (max-width: 600px) {
+
+  header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  nav summary {
+    font-size: 0.95rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  main section {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 4px;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
