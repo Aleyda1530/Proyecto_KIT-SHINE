@@ -413,3 +413,29 @@ main p a {
 main p a:hover {
   text-decoration: underline;
 }
+
+/*FOOTER*/
+footer {
+  background-color: #820692; 
+  color: #ffffff;          
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  margin-top: 1rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.95rem;
+  border-top: 2px solid #d3a5e9; /* línea superior sutil */
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+footer p::before {
+  content: "💄 "; /* toque de iconito */
+}
+
+footer:hover {
+  background-color: #bd6dff;
+  transition: background 0.3s ease;
+}
