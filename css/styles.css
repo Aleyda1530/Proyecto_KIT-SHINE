@@ -567,3 +567,11 @@ footer:hover {
     font-size: 0.85rem;
   }
 }
+
+img:hover { 
+  transform: scale(1.05); 
+  transition: 0.3s ease; 
+}
+button:hover { 
+  background-color: #7b045a; 
+}
