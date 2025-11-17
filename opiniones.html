@@ -1,67 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opiniones de los usuarios</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/opiniones.css">
+    <title>Opiniones – KIT SHINE</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>KIT SHINE</h1>
-    <nav>
-      <details>
-        <summary>Menú</summary>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="cuenta.html">Cuenta</a></li>
-          <li><a href="opiniones.html" class="activo">Opiniones</a></li>
-          <li><a href="pedidos.html">Pedidos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </details>
-    </nav>
-  </header>
 
-  <main>
-    <section class="opiniones-section">
-      <h2>Reseñas de Clientes</h2>
-      <p>Queremos conocer tu opinión sobre KIT SHINE. Déjanos tu reseña:</p>
+    <!-- Ícono menù -->
+    <div class="menu-icono" onclick="document.body.classList.toggle('menu-abierto')">☰</div>
 
-      <form action="#" method="post">
-        <div>
-          <label for="nombre">Ingrese su Nombre:</label>
-          <input type="text" id="nombre" name="Nombre" required>
-        </div>
-        <div>
-          <label for="apellido">Ingrese su Apellido:</label>
-          <input type="text" id="apellido" name="Apellido" required>
-        </div>
-        <div>
-          <label for="correo">Correo electrónico (opcional):</label>
-          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
-        </div>
-        <fieldset>
-          <legend>Calificación de su experiencia:</legend>
-          <label><input type="radio" name="calificacion" value="1" required> ⭐</label>
-          <label><input type="radio" name="calificacion" value="2"> ⭐⭐</label>
-          <label><input type="radio" name="calificacion" value="3"> ⭐⭐⭐</label>
-          <label><input type="radio" name="calificacion" value="4"> ⭐⭐⭐⭐</label>
-          <label><input type="radio" name="calificacion" value="5"> ⭐⭐⭐⭐⭐</label>
-        </fieldset>
-        <div>
-          <label for="comentario">Tu opinión es importante para nosotros:</label><br>
-          <textarea id="comentario" name="comentario" placeholder="Escriba aquí su comentario..."></textarea>
-        </div>
-        <div>
-          <button type="submit">Enviar reseña</button>
-          <button type="reset">Restablecer formulario</button>
-        </div>
-      </form>
+    <!-- MENÚ LATERAL -->
+    <aside class="menu-lateral">
+        <img src="images/logo.jpeg" class="logo-menu">
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="opiniones.html" class="activo">Opiniones</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="cuenta.html">Cuenta</a>
+        </nav>
+    </aside>
+
+    <!-- PORTADA CHICA -->
+    <section class="portada-chica">
+        <div class="portada-chica-overlay"></div>
+        <h1>Opiniones</h1>
+        <p>La belleza también se refleja en lo que dicen nuestras clientas.</p>
     </section>
-  </main>
-  <footer>
-    <p>© 2025 KIT SHINE — Creado por Aleyda</p>
-  </footer>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="pagina-contenedor opiniones-container">
+
+        <!-- SECCIÓN DE RESEÑAS EXISTENTES -->
+        <section class="opiniones-lista">
+            <h2>Reseñas de nuestras clientas</h2>
+
+            <div class="opinion-card">
+                <h4>María López</h4>
+                <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                <p>“La pulsera de sombras es lo mejor que he comprado este año. Súper elegante y práctica.”</p>
+            </div>
+
+            <div class="opinion-card">
+                <h4>Valeria Campos</h4>
+                <p class="estrellas">⭐⭐⭐⭐</p>
+                <p>“El anillo con brillo labial es hermoso. Me salvó varias veces en la universidad.”</p>
+            </div>
+
+            <div class="opinion-card">
+                <h4>Diana R.</h4>
+                <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                <p>“Los perfumes en miniatura son perfectos. Olor duradero y diseño precioso.”</p>
+            </div>
+        </section>
+
+        <!-- Formulario glam -->
+        <section class="opiniones-form">
+            <h2>Escribe tu opinión</h2>
+
+            <form action="#" method="post">
+
+                <label>Nombre</label>
+                <input type="text" name="nombre" required>
+
+                <label>Apellido</label>
+                <input type="text" name="apellido" required>
+
+                <label>Correo (opcional)</label>
+                <input type="email" name="correo" placeholder="ejemplo@correo.com">
+
+                <label>Calificación</label>
+                <select name="calificacion" required>
+                    <option value="">--Selecciona--</option>
+                    <option value="1">⭐ (1 estrella)</option>
+                    <option value="2">⭐⭐ (2 estrellas)</option>
+                    <option value="3">⭐⭐⭐ (3 estrellas)</option>
+                    <option value="4">⭐⭐⭐⭐ (4 estrellas)</option>
+                    <option value="5">⭐⭐⭐⭐⭐ (5 estrellas)</option>
+                </select>
+
+                <label>Comentario</label>
+                <textarea name="comentario" placeholder="Escribe aquí tu reseña..." required></textarea>
+
+                <button type="submit">Enviar reseña</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 KIT SHINE — Creado por Aleyda</p>
+    </footer>
+
+</body>
 </html>
