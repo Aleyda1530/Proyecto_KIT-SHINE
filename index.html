@@ -3,102 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIT SHINE - Tu maquillaje en miniatura</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
+    <title>KIT SHINE – Glamour Portátil</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <!-- Encabezado principal -->
-    <h1 id="top">KIT SHINE ✨</h1>
-    <p>Bienvenid@ a KIT SHINE, una nueva forma de llevar tu maquillaje siempre contigo. 
-       Accesorios como pulseras, collares y anillos que incluyen maquillaje en miniatura 
-       y perfumes portátiles.</p>
 
-    <!-- Menú interactivo agregado -->
-    <nav>
-      <details>
-        <summary>Menú</summary>
-        <ul>
-          <li><a href="index.html" class="activo">Inicio</a></li>
-          <li><a href="cuenta.html">Cuenta</a></li>
-          <li><a href="opiniones.html">Opiniones</a></li>
-          <li><a href="pedidos.html">Pedidos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </details>
-    </nav>
-  </header>
+    <!-- ÍCONO DEL MENÚ LATERAL -->
+    <div class="menu-icono" onclick="document.body.classList.toggle('menu-abierto')">
+        ☰
+    </div>
 
-  <main>
-    <hr>
+    <!-- MENÚ LATERAL NEGRO + DORADO -->
+    <aside class="menu-lateral">
+        <img src="images/logo.jpeg" class="logo-menu">
 
-    <!-- Quiénes somos -->
-    <section>
-      <h2>¿Quiénes somos?</h2>
-      <p>Somos un emprendimiento que busca hacer del maquillaje algo práctico, 
-         innovador y elegante, para que siempre lo tengas al alcance de tu mano.</p>
-    </section>
-
-    <!-- Qué ofrecemos -->
-    <section>
-      <h2>¿Qué ofrecemos?</h2>
-      <p>Ofrecemos kits personalizados con diseños exclusivos:</p>
-      <ul>
-        <li>Pulseras con sombras de ojos
-            <ul>
-                <li>Colores: nude, rosa, dorado</li>
-                <li>Accesorio extra: mini espejo</li>
-            </ul>
-        </li>
-        <li>Collares con perfume en miniatura
-            <ul>
-                <li>Fragancias: floral, frutal, vainilla</li>
-            </ul>
-        </li>
-        <li>Anillos con brillos labiales
-            <ul>
-                <li>Presentaciones: gloss, mate</li>
-                <li>Colores: rojo, coral, transparente</li>
-            </ul>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Hobbies / inspiración -->
-    <section>
-      <h3>Inspiración y estilo de vida</h3>
-      <p>Este proyecto nace de mi pasión por la moda, el diseño y el maquillaje práctico. 
-         Me inspira crear productos que combinen belleza y portabilidad.</p>
-      <br>
-      <!-- Imagen local de ejemplo -->
-      <img src="images/kitShine1.jpg" alt="Ejemplo de inspiración collar - Perfume" width="200">
-      <img src="images/kitShine2.jpg" alt="Ejemplo de inspiración Pulsera - Espejo" width="200">
-    </section>
-
-    <!-- Redes sociales -->
-    <aside>
-      <h4>Encuéntranos en redes sociales</h4>
-      <p>Síguenos para más novedades:</p>
-      <!-- Imagen clickeable que lleva a mi IG -->
-      <a href="https://www.instagram.com/aleyda_1530?igsh=cWNpazJmbXNmZjcx" target="_blank">
-        <img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo-2016.png" 
-             alt="Instagram Logo" width="200">
-      </a>
+        <nav>
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="opiniones.html">Opiniones</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="cuenta.html">Cuenta</a>
+        </nav>
     </aside>
 
-    <!-- Enlaces internos -->
-    <section>
-      <p><a href="cuenta.html">Ver Boleta de Pago</a></p>
-      <p><a href="#top"> Ir al inicio</a></p>
-      <p><a href="contacto.html"> Contactarse con los administradores</a></p>
-      <p><a href="opiniones.html"> Ir al formulario de reseñas de usuario</a></p>
-      <p><a href="pedidos.html"> Pedir tu KIT-SHINE </a></p>
-    </section>
-  </main>
+    <!-- PORTADA GRANDE Y ELEGANTE -->
+    <section class="portada">
+        <div class="portada-overlay"></div>
 
-  <footer>
-    <p>© 2025 KIT SHINE — Creado por Aleyda</p>
-  </footer>
+        <div class="portada-texto">
+            <h1>KIT SHINE</h1>
+            <h2>Lujo portátil. Belleza sin límites.</h2>
+            <p>
+                Accesorios exclusivos que integran maquillaje en miniatura.
+                Diseñados para mujeres que brillan sin esfuerzo.
+            </p>
+            <button onclick="location.href='catalogo.html'">Explorar Catálogo</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN INTRO -->
+    <section class="intro">
+        <h3>La nueva tendencia en belleza portátil ✨</h3>
+        <p>
+            Con KIT SHINE, cada accesorio es una pieza de moda funcional:
+            pulseras con sombras, collares con perfume, anillos con brillo labial
+            y más.
+        </p>
+    </section>
+
 </body>
 </html>
