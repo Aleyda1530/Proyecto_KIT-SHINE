@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo – KIT SHINE</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Icono menú -->
+    <div class="menu-icono" onclick="document.body.classList.toggle('menu-abierto')">☰</div>
+
+    <!-- Menú lateral -->
+    <aside class="menu-lateral">
+        <img src="images/logo.jpeg" class="logo-menu">
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html" class="activo">Catálogo</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="opiniones.html">Opiniones</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="cuenta.html">Cuenta</a>
+        </nav>
+    </aside>
+
+    <!-- PORTADA CATÁLOGO -->
+    <section class="portada-chica">
+        <div class="portada-chica-overlay"></div>
+        <h1>Catálogo</h1>
+        <p>Accesorios de belleza portátiles diseñados para mujeres que brillan.</p>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="pagina-contenedor catalogo-container">
+
+        <h2>Productos Exclusivos KIT SHINE ✨</h2>
+
+        <div class="catalogo-grid">
+
+            <!-- PRODUCTO 1 -->
+            <div class="producto-card">
+                <img src="images/producto1.png" alt="Collar con perfume portátil">
+                <h3>Collar "Eternal Scent"</h3>
+                <p class="precio">S/ 55.00</p>
+                <p class="descripcion">
+                    Perfume portátil con notas florales. Elegancia lista para llevar.
+                </p>
+                <button onclick="agregarAlCarrito('Eternal Scent', 55)">Añadir al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 2 -->
+            <div class="producto-card">
+                <img src="images/producto2.png" alt="Pulsera con sombras">
+                <h3>Pulsera "GlamBloom"</h3>
+                <p class="precio">S/ 45.00</p>
+                <p class="descripcion">
+                    Sombras nude, rosa y dorado integradas en una pulsera chic.
+                </p>
+                <button onclick="agregarAlCarrito('GlamBloom', 45)">Añadir al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 3 -->
+            <div class="producto-card">
+                <img src="images/producto3.png" alt="Anillo brillo labial">
+                <h3>Anillo "LuxeGloss"</h3>
+                <p class="precio">S/ 35.00</p>
+                <p class="descripcion">
+                    Brillo labial oculto. Gloss o mate para un toque glam instantáneo.
+                </p>
+                <button onclick="agregarAlCarrito('LuxeGloss', 35)">Añadir al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 4 -->
+            <div class="producto-card">
+                <img src="images/producto4.png" alt="Dije con mini espejo">
+                <h3>Dije "MirrorDrop"</h3>
+                <p class="precio">S/ 30.00</p>
+                <p class="descripcion">
+                    Mini espejo escondido en un dije elegante. Perfecto para retoques rápidos.
+                </p>
+                <button onclick="agregarAlCarrito('MirrorDrop', 30)">Añadir al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 5 -->
+            <div class="producto-card">
+                <img src="images/producto5.png" alt="Collar con bálsamo labial">
+                <h3>Collar "VelvetKiss"</h3>
+                <p class="precio">S/ 40.00</p>
+                <p class="descripcion">
+                    Bálsamo labial hidratante dentro de un dije dorado femenino.
+                </p>
+                <button onclick="agregarAlCarrito('VelvetKiss', 40)">Añadir al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 6 -->
+            <div class="producto-card">
+                <img src="images/producto6.png" alt="Pulsera perfume en gel">
+                <h3>Pulsera "GoldenAura"</h3>
+                <p class="precio">S/ 38.00</p>
+                <p class="descripcion">
+                    Perfume en gel integrado en una pulsera moderna y delicada.
+                </p>
+                <button onclick="agregarAlCarrito('GoldenAura', 38)">Añadir al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 7 -->
+            <div class="producto-card">
+                <img src="images/producto7.png" alt="Anillo con corrector mini">
+                <h3>Anillo "SilkTouch"</h3>
+                <p class="precio">S/ 34.00</p>
+                <p class="descripcion">
+                    Corrector compacto oculto en un anillo elegante. Perfecta discreción.
+                </p>
+                <button onclick="agregarAlCarrito('SilkTouch', 34)">Añadir al carrito</button>
+            </div>
+
+            <!-- PRODUCTO 8 -->
+            <div class="producto-card">
+                <img src="images/producto8.png" alt="Mini polvera en dije">
+                <h3>Dije "SoftGlow"</h3>
+                <p class="precio">S/ 42.00</p>
+                <p class="descripcion">
+                    Polvo compacto en mini polvera. Elegante, portátil y sofisticada.
+                </p>
+                <button onclick="agregarAlCarrito('SoftGlow', 42)">Añadir al carrito</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 KIT SHINE — Creado por Aleyda</p>
+    </footer>
+
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
