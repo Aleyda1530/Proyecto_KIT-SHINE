@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito – KIT SHINE</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Icono menú -->
+    <div class="menu-icono" onclick="document.body.classList.toggle('menu-abierto')">☰</div>
+
+    <!-- Menú lateral -->
+    <aside class="menu-lateral">
+        <img src="images/logo.jpeg" class="logo-menu">
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="carrito.html" class="activo">Carrito</a>
+            <a href="opiniones.html">Opiniones</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="cuenta.html">Cuenta</a>
+        </nav>
+    </aside>
+
+    <!-- Portada chica -->
+    <section class="portada-chica">
+        <div class="portada-chica-overlay"></div>
+        <h1>Carrito de Compras</h1>
+        <p>Revisa tus productos antes de completar tu compra.</p>
+    </section>
+
+    <!-- CONTENIDO -->
+    <main class="pagina-contenedor carrito-container">
+
+        <h2>Tu selección</h2>
+
+        <div id="carrito-vacio" class="carrito-vacio">
+            <p>✨ Tu carrito está vacío. Agrega productos desde el catálogo.</p>
+        </div>
+
+        <table id="tabla-carrito" class="tabla-carrito oculto">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cant.</th>
+                    <th>Precio</th>
+                    <th>Subtotal</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="carrito-items">
+                <!-- JS agregará los productos aquí -->
+            </tbody>
+        </table>
+
+        <div id="carrito-total" class="carrito-total oculto">
+            <h3>Total: S/ <span id="total-monto">0.00</span></h3>
+            <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 KIT SHINE — Creado por Aleyda</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>
