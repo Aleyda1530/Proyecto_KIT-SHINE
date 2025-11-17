@@ -475,3 +475,88 @@ body.menu-abierto .menu-lateral {
         margin: 30px auto;
     }
 }
+
+/* 
+   CUENTA – DATOS 
+ */
+
+.cuenta-container h2 {
+    font-size: 32px;
+    color: #b1006b;
+    margin-bottom: 15px;
+}
+
+/* Caja de datos */
+.cuenta-dato-box {
+    background: rgba(255,232,247,0.45);
+    border-left: 4px solid #d4af37;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.cuenta-dato-box p {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+
+
+/* Boleta */
+.tabla-boleta {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabla-boleta th {
+    background: #4a0030;
+    color: #f3e5f8;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-boleta td {
+    padding: 12px;
+    border-bottom: 1px solid #f7dcef;
+}
+
+.total-label {
+    text-align: right;
+    font-weight: bold;
+    background: #ffeaf7;
+}
+
+.total-monto {
+    background: #ffeaf7;
+    font-weight: bold;
+}
+
+/* Botón */
+.btn-descargar {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #d4af37, #f3e5ab);
+    color: #4a0030;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.btn-descargar:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(212,175,55,0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .tabla-boleta th, .tabla-boleta td {
+        font-size: 14px;
+    }
+}

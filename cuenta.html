@@ -1,74 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Boleta de Pago - KIT SHINE</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta – KIT SHINE</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>Boleta de Pago</h1>
 
-    <!-- Menú interactivo -->
-    <nav>
-      <details>
-        <summary>Menú</summary>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="cuenta.html" class="activo">Cuenta</a></li>
-          <li><a href="opiniones.html">Opiniones</a></li>
-          <li><a href="pedidos.html">Pedidos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </details>
-    </nav>
-  </header>
-  <h2>Detalle de tu compra</h2>
- <main class="contenedor-boleta">
-    <table class="tabla-boleta">
-        <caption>Boleta de Pago</caption>
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Cantidad</th>
-                <th>Precio Unitario</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Pulsera con sombras</td>
-                <td>1</td>
-                <td>15</td>
-                <td>15</td>
-            </tr>
-            <tr>
-                <td>Collar con perfume</td>
-                <td>2</td>
-                <td>20</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>Anillo con brillo labial</td>
-                <td>4</td>
-                <td>10</td>
-                <td>40</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3" style="text-align: right; font-weight: bold;">Total General</td>
-                <td>95</td>
-            </tr>
-        </tfoot>
-    </table>
+    <!-- Menú -->
+    <div class="menu-icono" onclick="document.body.classList.toggle('menu-abierto')">☰</div>
 
-    <!-- Enlace para regresar al inicio -->
-    <p><a href="index.html">⬅️ Volver al inicio</a></p>
-  </main>
+    <aside class="menu-lateral">
+        <img src="images/logo.jpeg" class="logo-menu">
 
-  <footer>
-    <p>© 2025 KIT SHINE — Creado por Aleyda</p>
-  </footer>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="opiniones.html">Opiniones</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="cuenta.html" class="activo">Cuenta</a>
+        </nav>
+    </aside>
+
+    <!-- Portada -->
+    <section class="portada-chica">
+        <div class="portada-chica-overlay"></div>
+        <h1>Mi Cuenta</h1>
+        <p>Revisa tus datos y tu boleta de compra.</p>
+    </section>
+
+    <!-- Contenido -->
+    <main class="pagina-contenedor cuenta-container">
+
+        <!-- Datos del cliente -->
+        <section class="cuenta-datos">
+            <h2>Datos de la Clienta</h2>
+
+            <div class="cuenta-dato-box">
+                <p><strong>Nombre:</strong> Aleyda (ejemplo)</p>
+                <p><strong>Correo:</strong> ejemplo@correo.com</p>
+                <p><strong>Teléfono:</strong> +51 940 111 222</p>
+                <p><strong>Dirección:</strong> Av. Belleza 123, Lima – Perú</p>
+            </div>
+        </section>
+
+        <!-- Boleta -->
+        <section class="cuenta-boleta">
+            <h2>Boleta de Pago</h2>
+
+            <table class="tabla-boleta">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cant.</th>
+                        <th>Precio</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+
+                <tbody id="boleta-items">
+                    <!-- Aquí JS agregará los productos del carrito -->
+                    <tr>
+                        <td>Pulsera ShineBloom</td>
+                        <td>1</td>
+                        <td>S/ 45.00</td>
+                        <td>S/ 45.00</td>
+                    </tr>
+                    <tr>
+                        <td>Anillo LuxeGems</td>
+                        <td>2</td>
+                        <td>S/ 35.00</td>
+                        <td>S/ 70.00</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="total-label">TOTAL</td>
+                        <td class="total-monto">S/ 115.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <button class="btn-descargar">Descargar boleta (PDF)</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 KIT SHINE — Creado por Aleyda</p>
+    </footer>
+
 </body>
 </html>
