@@ -47,25 +47,25 @@
         </section>
 
         <section class="pedidos-form">
-            <form action="#" method="post">
+            <form action="#" method="post" onsubmit="return validarPedido()">
 
                 <label>Nombre</label>
-                <input type="text" name="nombre" required>
+                <input type="text" id="ped-nombre" name="nombre" required>
 
                 <label>Apellido</label>
-                <input type="text" name="apellido" required>
+                <input type="text" id="ped-apellido" name="apellido" required>
 
                 <label>DNI</label>
-                <input type="text" name="dni" required>
+                <input type="text" id="dni" name="dni" required>
 
                 <label>Dirección completa</label>
-                <input type="text" name="direccion" placeholder="País – Ciudad – Distrito – Calle" required>
+                <input type="text" id="direccion" name="direccion" placeholder="País – Ciudad – Distrito – Calle" required>
 
                 <label>Correo electrónico</label>
-                <input type="email" name="correo" placeholder="ejemplo@correo.com" required>
+                <input type="email" id="ped-correo" name="correo" placeholder="ejemplo@correo.com" required>
 
                 <label>Selecciona tu KIT SHINE</label>
-                <select name="producto" required>
+                <select id="ped-producto" name="producto" required>
                     <option value="">--Selecciona--</option>
                     <option value="kit1">KIT SHINE: ShineBloom (Pulsera con sombras + mini espejo)</option>
                     <option value="kit2">KIT SHINE: CharmScent (Collar con perfume en miniatura)</option>
@@ -73,7 +73,7 @@
                 </select>
 
                 <label>Método de pago</label>
-                <select name="pago" required>
+                <select id="ped-pago" name="pago" required>
                     <option value="">--Selecciona--</option>
                     <option value="tarjeta">Tarjeta</option>
                     <option value="transferencia">Transferencia</option>
@@ -87,7 +87,7 @@
                 <button type="submit">Confirmar Pedido</button>
             </form>
         </section>
-
+        <script src="js/validaciones.js"></script>
     </main>
 
     <footer>

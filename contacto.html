@@ -70,19 +70,19 @@
             </div>
         </section>
 
-        <!-- FORMULARIO GLAM -->
+        <!-- FORMULARIO -->
         <section class="contacto-form">
             <h2>Envíanos un mensaje</h2>
 
-            <form action="#" method="post">
+            <form action="#" method="post" onsubmit="return validarContacto()">
                 <label>Nombre</label>
-                <input type="text" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" required>
 
                 <label>Apellido</label>
-                <input type="text" name="apellido" required>
+                <input type="text" id="apellido" name="apellido" required>
 
                 <label>Correo electrónico</label>
-                <input type="email" name="correo" placeholder="ejemplo@correo.com" required>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
                 <label>Motivo de contacto</label>
                 <select name="tema" required>
@@ -95,17 +95,17 @@
                 </select>
 
                 <label>Mensaje</label>
-                <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
                 <button type="submit">Enviar mensaje</button>
             </form>
         </section>
+        <script src="js/validaciones.js"></script>
 
     </main>
 
     <footer>
         <p>© 2025 KIT SHINE — Creado por Aleyda</p>
     </footer>
-
 </body>
 </html>

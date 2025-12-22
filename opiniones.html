@@ -65,19 +65,19 @@
         <section class="opiniones-form">
             <h2>Escribe tu opinión</h2>
 
-            <form action="#" method="post">
+            <form action="#" method="post" onsubmit="return validarOpinion()">
 
                 <label>Nombre</label>
-                <input type="text" name="nombre" required>
+                <input type="text" id="op-nombre" name="nombre" required>
 
                 <label>Apellido</label>
-                <input type="text" name="apellido" required>
+                <input type="text" id="op-apellido" name="apellido" required>
 
                 <label>Correo (opcional)</label>
-                <input type="email" name="correo" placeholder="ejemplo@correo.com">
+                <input type="email" id="op-correo" name="correo" placeholder="ejemplo@correo.com">
 
                 <label>Calificación</label>
-                <select name="calificacion" required>
+                <select id="op-calificacion" name="calificacion" required>
                     <option value="">--Selecciona--</option>
                     <option value="1">⭐ (1 estrella)</option>
                     <option value="2">⭐⭐ (2 estrellas)</option>
@@ -87,11 +87,12 @@
                 </select>
 
                 <label>Comentario</label>
-                <textarea name="comentario" placeholder="Escribe aquí tu reseña..." required></textarea>
+                <textarea id="op-comentario" name="comentario" required></textarea>
 
                 <button type="submit">Enviar reseña</button>
             </form>
         </section>
+        <script src="js/validaciones.js"></script>
 
     </main>
 
