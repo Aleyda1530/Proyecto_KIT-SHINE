@@ -65,31 +65,26 @@
 
                 <tbody id="boleta-items">
                     <!-- Aquí JS agregará los productos del carrito -->
-                    <tr>
-                        <td>Pulsera ShineBloom</td>
-                        <td>1</td>
-                        <td>S/ 45.00</td>
-                        <td>S/ 45.00</td>
-                    </tr>
-                    <tr>
-                        <td>Anillo LuxeGems</td>
-                        <td>2</td>
-                        <td>S/ 35.00</td>
-                        <td>S/ 70.00</td>
-                    </tr>
                 </tbody>
 
                 <tfoot>
                     <tr>
                         <td colspan="3" class="total-label">TOTAL</td>
-                        <td class="total-monto">S/ 115.00</td>
+                        <td class="total-monto">S/ <span id="boleta-total">0.00</span></td>
                     </tr>
                 </tfoot>
             </table>
 
-            <button class="btn-descargar">Descargar boleta (PDF)</button>
+            <button class="btn-descargar" onclick="descargarBoleta()">
+                Descargar boleta (PDF)
+            </button>
+            <script>
+            function descargarBoleta() {
+                alert("La boleta ha sido generada correctamente.\n(versión simulada)");
+                }
+            </script>
         </section>
-
+        <script src="js/cuenta.js"></script>
     </main>
 
     <footer>
