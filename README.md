@@ -121,18 +121,12 @@ Despliegue en un servidor en la nube
 git clone https://github.com/Aleyda1530/Proyecto_KIT-SHINE.git
 Ingresar a la carpeta del proyecto:
 
-bash
-Copiar código
 cd proyecto_individual
 Ejecutar el servidor en Python:
 
-bash
-Copiar código
 python server.py
 Abrir el navegador y acceder a:
 
-arduino
-Copiar código
 http://localhost:8000
 Base de datos (MySQL)
 La aplicación utiliza una base de datos MySQL gestionada con WAMP Server para almacenar la información enviada desde los formularios.
