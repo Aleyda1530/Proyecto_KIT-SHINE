@@ -64,6 +64,54 @@ Antes de ejecutar el proyecto asegúrate de tener instalado:
 - Git (opcional, para clonar el repositorio)
 
 ---
+🗄️ Base de datos (MySQL)
+
+La aplicación utiliza una base de datos MySQL gestionada con WAMP Server para almacenar la información enviada desde los formularios.
+
+Tablas principales
+
+pedidos
+
+nombre, apellido, dni, dirección, correo, producto, método de pago, comentarios
+
+opiniones
+
+nombre, apellido, correo, calificación, comentario
+
+contacto
+
+nombre, apellido, correo, tema, mensaje
+
+
+✅ Funcionalidades principales
+
+Navegación completa entre páginas
+
+Catálogo de productos
+
+Carrito de compras con localStorage
+
+Validación de formularios con JavaScript
+
+Generación de boleta de pago (simulada)
+
+Envío de formularios mediante POST
+
+Almacenamiento de datos en MySQL
+
+Servidor HTTP propio en Python
+
+🚀 Trabajo futuro
+
+Implementar autenticación de usuarios
+
+Generar boletas reales en formato PDF
+
+Envío automático de correos
+
+Panel administrativo
+
+Despliegue en un servidor en la nube
 
 ## Instrucciones para ejecutar el proyecto
 
@@ -104,31 +152,4 @@ nombre, apellido, correo, tema, mensaje
 
 ⚠️ La conexión a la base de datos se realiza en modo local como parte del entorno de desarrollo.
 
-Funcionalidades principales
-Navegación completa entre páginas
-
-Catálogo de productos
-
-Carrito de compras con localStorage
-
-Validación de formularios con JavaScript
-
-Generación de boleta de pago (simulada)
-
-Envío de formularios mediante POST
-
-Almacenamiento de datos en MySQL
-
-Servidor HTTP propio en Python
-
-Trabajo futuro
-Implementar autenticación de usuarios
-
-Generar boletas reales en formato PDF
-
-Envío automático de correos
-
-Panel administrativo
-
-Despliegue en un servidor en la nube
-
+-
